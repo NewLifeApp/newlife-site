@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NewLife – Win the Day | Habit Tracker for iPhone</title>
-<meta name="description" content="NewLife is a habit tracker that tells you the truth. Miss a habit and your streak counts down, check in and start fresh. Beautiful themes, widgets, no account needed.">
+<meta name="description" content="NewLife is a habit tracker that tells you the truth. You choose what wins a day, a missed day counts down, and a check-in starts you fresh. Themes, widgets, a 30 Day Reset, and no account needed.">
 <meta name="theme-color" content="#07070a">
 <link rel="icon" type="image/png" href="img/icon-64.png">
 <link rel="apple-touch-icon" href="img/icon-180.png">
 <meta property="og:title" content="NewLife – Win the Day">
-<meta property="og:description" content="The habit tracker that tells you the truth. Streaks that can go negative, living themes, widgets, and no account.">
+<meta property="og:description" content="The habit tracker that tells you the truth. You choose what wins a day. Streaks that can go negative, a nightly check-in, a 30 Day Reset, widgets, and no account.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://newlifeapp.github.io/newlife-site/">
 <meta property="og:url" content="https://newlifeapp.github.io/newlife-site/">
@@ -20,40 +20,58 @@
 <link rel="preload" href="fonts/bricolage-grotesque-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
-
 <header class="top">
   <div class="wrap nav">
-    <a class="brand" href="#top"><img src="img/icon-64.png" alt="" width="34" height="34">NewLife</a>
+    <a class="brand" href="index.html"><img src="img/icon-64.png" alt="" width="34" height="34">NewLife</a>
     <nav class="links" aria-label="Sections">
-      <a href="#truth">The streak</a>
-      <a href="#themes">Themes</a>
-      <a href="#day">Your day</a>
-      <a href="#faq">FAQ</a>
+      <a href="index.html#how">How it works</a>
+      <a href="index.html#truth">The streak</a>
+      <a href="reset.html">30 Day Reset</a>
+      <a href="index.html#research">Research</a>
+      <a href="index.html#faq">FAQ</a>
     </nav>
     <span class="pill soon" aria-label="Coming soon to iPhone"><i></i>Coming soon</span>
   </div>
 </header>
-
 <main id="top">
 <div class="wrap">
   <div class="hero">
     <div>
       <div class="eyebrow">Habit tracker for iPhone</div>
       <h1>Win the day.<br><em>Then win tomorrow.</em></h1>
-      <p class="lead">The habit tracker that tells you the truth. Miss a habit and your streak counts down. Check in and you start fresh. It's honest, and it feels good to show up.</p>
+      <p class="lead">The habit tracker that tells you the truth. You choose what counts as a won day. Miss it and your streak counts down. Check in and you start fresh. It's honest, and it feels good to show up.</p>
       <div class="cta">
         <span class="pill soon"><i></i>Coming soon to iPhone</span>
-        <a class="pill ghost" href="#truth">See how it works</a>
+        <a class="pill ghost" href="#how">See how it works</a>
       </div>
       <p class="note">No account. No sign-up. Your data stays on your phone.</p>
     </div>
     <div class="rv">
       <div class="phone">
-        <video id="heroVideo" src="hero.mp4" poster="img/home-blossom.webp" autoplay muted loop playsinline preload="auto" aria-label="NewLife home screen switching between the Cherry Blossom, Forest and Winter themes"></video>
+        <video id="heroVideo" src="hero.mp4" poster="img/home-blossom.webp" autoplay muted loop playsinline preload="auto" aria-label="NewLife Today screen switching between the Cherry Blossom, Forest and Winter themes"></video>
       </div>
     </div>
   </div>
+  <div class="trustbar rv">
+    <div><i>🙅</i>No account</div><div><i>📴</i>Works offline</div><div><i>🔒</i>Stays on your phone</div><div><i>🚫</i>No ads</div>
+  </div>
 </div>
+
+<!-- How it works -->
+<section id="how" class="band">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">How it works</div>
+      <h2>Three steps. <em>One minute</em> a day.</h2>
+      <p>NewLife is built around one simple loop: do what you set out to do, then close out the day. The sun on your screen shows how you're doing at a glance.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><h4>Pick your habits</h4><p>Start with up to three. Keep the names short, like Gym, Read or Water. You can add more later.</p></div>
+      <div class="step rv"><h4>Choose what wins a day</h4><p>Do everything, do only the habits you pick, or stay clear of something you are trying to quit. It is your rule, and you can change it.</p></div>
+      <div class="step rv"><h4>Check in</h4><p>Tap your habits through the day. Win the day and the light comes back. At night, a short check-in closes it out and sets up tomorrow.</p></div>
+    </div>
+  </div>
+</section>
 
 <!-- The honest streak -->
 <section id="truth">
@@ -63,22 +81,28 @@
       <div class="eyebrow">The honest streak</div>
       <h3>Your streak can go <em class="neg" style="color:var(--loss)">negative.</em></h3>
       <p>Most habit apps quietly reset a missed streak to zero, and you never see what slipped. NewLife counts it: <span class="neg">−1</span>, <span class="neg">−2</span>, <span class="neg">−3</span>, in red, right where you'll see it.</p>
-      <p>Then you check in and start fresh. No guilt trips, no lectures, just a clear picture of where you stand today.</p>
+      <p>Then you check in and start fresh. No guilt trips, no lectures, just a clear picture of where you stand today. Every habit has its own streak and a plain status line, so you always know what needs you.</p>
       <div class="chips"><span class="chip">Per-habit streaks</span><span class="chip">An honest status for each habit</span><span class="chip">Check in to start fresh</span></div>
     </div>
   </div>
 </section>
 
-<!-- Win or lose the day -->
-<section id="day">
-  <div class="wrap split flip">
-    <div class="rv"><div class="phone"><img src="img/home-dark.webp" alt="NewLife Today screen with the sun, the habits that count and a check-in card" loading="lazy"></div></div>
-    <div class="copy rv">
-      <div class="eyebrow">Your day, your rule</div>
-      <h3>You decide what <em>wins</em> a day.</h3>
-      <p>Every day is either won or lost, and you choose what counts: do everything, do just the habits you pick (even one), or stay clear of something you are trying to quit. Win the day and the light comes back. Miss it and your streak counts down until you win again.</p>
-      <p>You can change the rule whenever you like. Days you already played keep the rule they were played under.</p>
-      <div class="chips"><span class="chip">Do everything</span><span class="chip">Do the ones I pick</span><span class="chip">Stay clear</span></div>
+<!-- Your day, your rule -->
+<section id="day" class="band">
+  <div class="wrap">
+    <div class="split flip">
+      <div class="rv"><div class="duo"><div class="phone sm"><img src="img/onb-rule.webp" alt="NewLife asking what makes a won day, with options to do everything or only the habits you pick" loading="lazy"></div><div class="phone sm"><img src="img/home-dark.webp" alt="NewLife Today screen with the sun, the habits that count and a check-in card" loading="lazy"></div></div></div>
+      <div class="copy rv">
+        <div class="eyebrow">Your day, your rule</div>
+        <h3>You decide what <em>wins</em> a day.</h3>
+        <p>Every day is either won or lost, and you choose what counts. Win the day and the light comes back. Miss it and your streak counts down until you win again. Every new day starts clean.</p>
+        <p>You can change the rule whenever you like. Days you already played keep the rule they were played under, so your history never gets rewritten.</p>
+      </div>
+    </div>
+    <div class="rules">
+      <div class="rule rv"><b>Do everything</b><p>Every habit has to be done.</p><small>Best if you keep a short, steady list and want a clear bar.</small></div>
+      <div class="rule rv"><b>Do the ones I pick</b><p>Only the habits you mark count. The rest are a bonus.</p><small>Even one habit is enough. Great for one keystone habit, like a workout.</small></div>
+      <div class="rule rv"><b>Stay clear</b><p>Don't slip on the thing you are quitting. Your 30 Day Reset check-in decides the day.</p><small>Available while a break-a-habit 30 Day Reset is running.</small></div>
     </div>
   </div>
 </section>
@@ -91,19 +115,56 @@
       <div class="eyebrow">The check-in</div>
       <h3>Close out the day, <em>on purpose.</em></h3>
       <p>At the end of the day, take a minute. Pick the face that fits, note what got in the way if the day slipped, and write a line if you like. Then set one thing for tomorrow.</p>
-      <p>It never decides whether you won. It is just a calm, private way to finish the day, and your check-ins collect in the Journey tab.</p>
-      <div class="chips"><span class="chip">How it felt</span><span class="chip">A private line</span><span class="chip">One thing for tomorrow</span></div>
+      <p>It never decides whether you won. It is just a calm, private way to finish the day. Your check-ins collect in the Journey tab, so you can look back and see how your days really felt.</p>
+      <div class="chips"><span class="chip">How it felt</span><span class="chip">What got in the way</span><span class="chip">A private line</span><span class="chip">One thing for tomorrow</span></div>
     </div>
   </div>
 </section>
 
+<!-- 30 Day Reset -->
+<section id="reset" class="band">
+  <div class="wrap split flip">
+    <div class="rv"><div class="duo"><div class="phone sm"><img src="img/reset-plan.webp" alt="NewLife 30 Day Reset plan showing Day 9 of 30, days clear, urges ridden and the thirty days grid" loading="lazy"></div><div class="phone sm"><img src="img/reset-urge.webp" alt="NewLife urge timer with a breathing sun and a 90 second countdown" loading="lazy"></div></div></div>
+    <div class="copy rv">
+      <div class="eyebrow">30 Day Reset</div>
+      <h3>A guided month to <em>build</em> a habit or <em>break</em> one.</h3>
+      <p>Pick something you want to start or stop. For thirty days, NewLife gives you one short lesson, one small move and one honest check-in, plus a tool for the hard moments.</p>
+      <ul class="bullets">
+        <li><span><b>A lesson a day.</b> Short and plain, drawn from published research on how habits form.</span></li>
+        <li><span><b>One concrete move.</b> Thirty specific things to do for your habit, not generic advice.</span></li>
+        <li><span><b>An urge timer.</b> A 90-second breathing exercise for when it gets hard. It is always free to reach, even before you subscribe.</span></li>
+        <li><span><b>Slips handled kindly.</b> A slip resets your days clear but keeps your total and what you've saved.</span></li>
+      </ul>
+      <a class="textlink" href="reset.html">See everything in the 30 Day Reset &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- Research -->
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">Built on real research</div>
+      <h2>Habits aren't about <em>willpower.</em></h2>
+      <p>The ideas behind NewLife come from published studies on how habits actually form. We show where each number comes from.</p>
+    </div>
+    <div class="stats">
+      <div class="stat rv"><div class="n">4<small>in 10</small></div><h4>Much of your day is habit</h4><p>In a diary study, roughly four in ten of the things people did were repeated almost daily, in the same place, without much thought.</p><cite>Wood, Quinn &amp; Kashy (2002), Journal of Personality and Social Psychology</cite></div>
+      <div class="stat rv"><div class="n">66<small>days</small></div><h4>About two months, and one slip barely counts</h4><p>In a study of 96 people, the typical time for a daily habit to feel automatic was 66 days. Missing a single day didn't materially change the process.</p><cite>Lally, van Jaarsveld, Potts &amp; Wardle (2010), European Journal of Social Psychology. The range was 18 to 254 days.</cite></div>
+      <div class="stat rv"><div class="n">94<small>tests</small></div><h4>A plan beats good intentions</h4><p>Researchers combined 94 tests of deciding exactly when and where you'll act. People with a plan were more likely to follow through.</p><cite>Gollwitzer &amp; Sheeran (2006), Advances in Experimental Social Psychology</cite></div>
+      <div class="stat rv"><div class="n">138<small>experiments</small></div><h4>What you can see, you keep doing</h4><p>Across 138 experiments with almost 20,000 people, those who tracked their progress were more likely to reach their goals.</p><cite>Harkin et al. (2016), Psychological Bulletin</cite></div>
+    </div>
+    <p class="fine rv">These studies describe people in general, and results vary from person to person. NewLife is a self-improvement tool, not medical advice or treatment.</p>
+  </div>
+</section>
+
 <!-- Themes -->
-<section id="themes">
+<section id="themes" class="band">
   <div class="wrap">
     <div class="sec-head rv">
       <div class="eyebrow">Themes</div>
       <h2>Habits that <em>feel</em> like something.</h2>
-      <p>Cherry Blossom, Forest and Winter come alive with falling petals, fireflies and snow, alongside the calm Night and Day themes.</p>
+      <p>Cherry Blossom, Forest and Winter come alive with falling petals, fireflies and snow, alongside the calm Night and Day themes. The sun, the streak flame and the whole app change with the theme you pick.</p>
     </div>
     <div class="grid3">
       <div class="theme rv"><div class="phone sm"><img src="img/home-blossom.webp" alt="Cherry Blossom theme" loading="lazy"></div><h4>Cherry Blossom</h4><p>Petals on the breeze</p></div>
@@ -130,8 +191,8 @@
   </div>
 </section>
 
-<!-- Widgets / part of your day -->
-<section>
+<!-- Widgets -->
+<section class="band">
   <div class="wrap split flip">
     <div class="rv">
       <div class="widgets" aria-label="Illustration of the NewLife Home Screen widgets">
@@ -146,19 +207,33 @@
       <h3>On your Home Screen, not in your way.</h3>
       <p>Four widgets, including one for the Lock Screen: your streak, today's habits, today's light and your 30 Day Reset. See where you stand every time you unlock your phone, without opening anything.</p>
       <p>Optional reminders for each habit, plus a nudge if you haven't checked in by the end of the day.</p>
+      <div class="chips"><span class="chip">Streak</span><span class="chip">Today's habits</span><span class="chip">Today's light</span><span class="chip">30 Day Reset</span></div>
     </div>
   </div>
 </section>
 
-<!-- Trust -->
-<section>
+<!-- Privacy -->
+<section id="private">
   <div class="wrap">
-    <div class="sec-head rv"><div class="eyebrow">Private by design</div><h2>Your habits are <em>yours.</em></h2></div>
-    <div class="trust">
+    <div class="sec-head rv"><div class="eyebrow">Private by design</div><h2>Your habits are <em>yours.</em></h2><p>NewLife makes no network requests. There is nothing to sign into, nothing to sync and nothing for us to see.</p></div>
+    <div class="cards">
       <div class="card rv"><div class="ic">🙅</div><h4>No account</h4><p>Open it and start. No email, no password, no sign-up screen.</p></div>
       <div class="card rv"><div class="ic">📴</div><h4>Works offline</h4><p>Everything runs on your phone. No internet needed, ever.</p></div>
-      <div class="card rv"><div class="ic">🔒</div><h4>Stays on your phone</h4><p>Your habits and journal are stored on your device. A code or Face ID can lock the journal.</p></div>
+      <div class="card rv"><div class="ic">🔒</div><h4>Stays on your phone</h4><p>Your habits and check-ins are stored on your device. A code or Face ID can lock the journal.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing" class="band">
+  <div class="wrap">
+    <div class="sec-head rv"><div class="eyebrow">Pricing</div><h2>Simple, and <em>everything</em> included.</h2><p>One subscription unlocks the whole app. No ads, and no data sold, because there is no data.</p></div>
+    <div class="priceGrid">
+      <div class="price best rv"><span class="tag">3-DAY FREE TRIAL</span><h4>Annual</h4><div class="amt">$29.99<small> / year</small></div><p>About $2.50 a month. Free for the first 3 days, then renews yearly until you cancel.</p></div>
+      <div class="price rv"><h4>Monthly</h4><div class="amt">$6.99<small> / month</small></div><p>Pay month to month and cancel any time.</p></div>
+    </div>
+    <div class="included rv"><span>Unlimited habits and reminders</span><span>30 Day Reset</span><span>Private journal with a lock</span><span>Every theme</span><span>All future updates</span></div>
+    <p class="fine rv">Planned launch pricing. Final prices and trial terms are shown in the App Store before you subscribe. Manage or cancel any time in your Apple ID settings.</p>
   </div>
 </section>
 
@@ -167,13 +242,16 @@
   <div class="wrap">
     <div class="sec-head rv"><div class="eyebrow">FAQ</div><h2>Questions about NewLife.</h2></div>
     <div class="faq rv">
-      <details><summary>How much does NewLife cost?</summary><p>NewLife is a subscription app. Pricing, and any free trial, are shown in the app before you subscribe. You can manage or cancel your subscription any time in your Apple ID settings.</p></details>
+      <details><summary>How much does NewLife cost?</summary><p>NewLife is a subscription app: planned launch pricing is $29.99 a year with a 3-day free trial, or $6.99 a month. Final prices and trial terms are shown in the App Store before you subscribe, and you can cancel any time in your Apple ID settings.</p></details>
       <details><summary>Do I need an account?</summary><p>No. There is no sign-up. NewLife works as soon as you open it.</p></details>
       <details><summary>Where is my data stored?</summary><p>On your iPhone. NewLife does not send your habits or journal anywhere. Because of that, deleting the app deletes your data, and syncing between devices is not available yet.</p></details>
       <details><summary>What makes a won day?</summary><p>You choose. Do everything: every habit has to be done. Do the ones I pick: only the habits you mark count, and the rest are a bonus. Or stay clear: your check-in on a 30 Day Reset to break a habit decides the day. You can change it any time in Settings.</p></details>
-      <details><summary>What happens when I miss a habit?</summary><p>Your streak for that habit goes negative and counts down for each missed day (−1, −2, −3…). Check in and it starts fresh at 1. Nothing is hidden and nothing is judged.</p></details>
-      <details><summary>What is the 30 Day Reset?</summary><p>An optional program to build a habit or break one: a short lesson and a small move each day, a daily check-in, and an urge timer when it gets hard. It is a self-improvement tool, not medical advice or treatment. If you are struggling, please reach out to a professional or a helpline.</p></details>
+      <details><summary>What happens to my history if I change the rule?</summary><p>Nothing. A new rule starts today. Days you already played keep the rule they were played under, so past wins and losses stay as they were.</p></details>
+      <details><summary>What happens when I miss a habit?</summary><p>Your streak goes negative and counts down for each missed day (−1, −2, −3…). Check in and it starts fresh. Nothing is hidden and nothing is judged.</p></details>
+      <details><summary>What is the 30 Day Reset?</summary><p>An optional program to build a habit or break one: a short lesson and a small move each day, a daily check-in, and an urge timer when it gets hard. It is a self-guided plan, not medical advice or treatment. If you are struggling, please reach out to a professional or a helpline. <a href="reset.html" style="color:var(--brand)">Read more.</a></p></details>
+      <details><summary>What is the check-in?</summary><p>A short flow at the end of the day: how the day felt, what got in the way if it slipped, a line for your journal, and one thing for tomorrow. It never decides whether you won the day.</p></details>
       <details><summary>Is the journal encrypted?</summary><p>The journal is protected by a lock code and optional Face ID or Touch ID, and it only exists on your phone. It works like a privacy screen for anyone who picks up your phone.</p></details>
+      <details><summary>Will there be ads?</summary><p>No. NewLife has no ads and makes no network requests.</p></details>
       <details><summary>Does it work on Android or iPad?</summary><p>NewLife is made for iPhone. Other platforms may come later.</p></details>
       <details><summary>How do the widgets work?</summary><p>Press and hold your Home Screen, tap +, search for NewLife and add the streak, today's habits, today's light or 30 Day Reset widget. Open the app once and they will fill in.</p></details>
     </div>
@@ -182,23 +260,25 @@
 
 <section class="closing">
   <div class="wrap rv">
+    <svg class="sunmark" viewBox="170 180 684 560" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs><linearGradient id="sg" x1="0" y1="330" x2="0" y2="600" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFCB1A"/><stop offset="1" stop-color="#FB8A1E"/></linearGradient><clipPath id="sc"><rect x="0" y="0" width="1024" height="600"/></clipPath></defs><g stroke="#FDB41E" stroke-width="30" stroke-linecap="round"><line x1="512" y1="210" x2="512" y2="274"/><line x1="306" y1="272" x2="356" y2="328"/><line x1="718" y1="272" x2="668" y2="328"/><line x1="194" y1="424" x2="264" y2="446"/><line x1="830" y1="424" x2="760" y2="446"/></g><g clip-path="url(#sc)"><circle cx="512" cy="550" r="220" fill="url(#sg)"/></g><rect x="187" y="620" width="650" height="36" rx="18" fill="#FD9A22"/><rect x="306" y="679" width="412" height="38" rx="19" fill="#FD9A22"/></svg>
     <h2>Start with <em>today.</em></h2>
     <p class="lead" style="margin:0 auto;">Win the day. Then win tomorrow.</p>
     <div class="cta"><span class="pill soon"><i></i>Coming soon to iPhone</span></div>
   </div>
 </section>
 </main>
-
 <footer>
   <div class="wrap">
-    <div class="row">
-      <a href="#top">NewLife</a><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="#top">Back to top</a>
+    <div class="cols">
+      <div><a class="brand" href="index.html" style="margin-bottom:12px;"><img src="img/icon-64.png" alt="" width="30" height="30">NewLife</a><p>Win the day. Then win tomorrow. A habit tracker for iPhone that tells you the truth.</p></div>
+      <div><h5>Explore</h5><a href="index.html#how">How it works</a><a href="index.html#truth">The honest streak</a><a href="index.html#day">Your day, your rule</a><a href="reset.html">30 Day Reset</a></div>
+      <div><h5>Learn</h5><a href="index.html#research">The research</a><a href="index.html#themes">Themes</a><a href="index.html#pricing">Pricing</a><a href="index.html#faq">FAQ</a></div>
+      <div><h5>Help</h5><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></div>
     </div>
     <p>NewLife is a self-improvement tool, not medical advice or treatment. Screens shown use example data.</p>
-    <p>Apple, iPhone, Face ID, Touch ID and the App Store are trademarks of Apple Inc. © 2026 NewLife.</p>
+    <p>Apple, iPhone, Face ID, Touch ID and the App Store are trademarks of Apple Inc. &copy; 2026 NewLife.</p>
   </div>
 </footer>
-
 <script src="site.js"></script>
 </body>
 </html>
